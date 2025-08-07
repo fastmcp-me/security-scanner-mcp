@@ -37,3 +37,28 @@ coverage/
 *.tmp
 *.bak
 .cache/
+
+# Security - certificates and keys
+*.pem
+*.key
+*.cert
+*.p12
+*.pfx
+.aws/
+credentials
+aws-exports.js
+**/secrets/
+**/credentials/
+
+# Database files
+*.sqlite
+*.db
+
+# Python
+__pycache__/
+*.pyc
+
+# Config files that might contain secrets
+config.json
+settings.json
+docker-compose.override.yml

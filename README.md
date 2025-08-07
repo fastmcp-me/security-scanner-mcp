@@ -23,6 +23,31 @@ Or use with `npx`:
 npx @rupeshpanwar/security-scanner-mcp
 ```
 
+## CLI Usage (NEW in v1.1.0)
+
+The package now includes a standalone CLI tool for direct command-line scanning:
+
+```bash
+# Scan a directory with summary output
+security-scan scan /path/to/project
+
+# Scan with detailed output
+security-scan scan /path/to/project --format detailed
+
+# Scan specific categories
+security-scan scan /path/to/project --categories secrets vulnerabilities
+
+# Output as JSON
+security-scan scan /path/to/project --format json
+
+# Save report to file
+security-scan scan /path/to/project --format detailed > security-report.txt
+```
+
+### CLI Options:
+- `--format <format>`: Output format (summary|detailed|json), default: summary
+- `--categories <categories...>`: Specific categories to scan (secrets|vulnerabilities|dependencies|gitignore|git-history), default: all
+
 ## Usage with Claude Desktop
 
 Add the server to your Claude Desktop configuration:

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "security-scanner": {
+      "command": "npx",
+      "args": ["@rupeshpanwar/security-scanner-mcp"]
+    }
+  }
+}
